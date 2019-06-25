@@ -1,0 +1,135 @@
+	-- Perguntas iniciais --
+
+Composição geral do publico, avançados +5 anos ou iniciantes -5 anos?
+
+Definição sobre modelo de apresentação, didático ou prático?
+
+	-- Tópicos --
+
+Contexto 1: Objetivo Geral
+
+	Pergunta 1: Porque eu preciso saber isso?
+		Resposta rápida: Você não precisa...
+
+	Como tradicionalmente usamos o PHP?
+		Websites
+		API's
+		Sistemas Web
+		Laravel
+		Wordpress
+
+	O que o PHP é capaz de fazer hoje em dia?
+		Live Streamming
+		Games
+		Long Running Scripts
+		AI
+		Gateways
+
+	O programador como soluçionador de problemas!
+		Os Problemas e o Conhecimento
+		O Conhecimento e a Criatividade
+		A Criatividade e as Ferramentas
+
+	Resposta Complexa da Pergunta 1
+		Para obter Conhecimento sobre Ferramentas para ser capaz de atingir a Criatividade na solução de Problemas
+
+
+Contexto 2: Didática Básica
+
+	Como construimos soluções com o PHP tradicionalmente?
+		Http Request Response Cicle - Server side processing
+		Cli - Scripting
+		Delegamos o Socket e HTTP response cycle para outras ferramentas
+
+	Execução Sincrona
+		Slide: fluxo de execução  sincrona
+		Vantagens
+			Controle
+			Facilidade
+
+	Execução Assincrona
+		Slide: fluxo de execução assincrona
+		Vantagens
+			Eficiência		
+
+	Generators e Coroutines
+		O que são?
+		Porque que eu preciso saber isso?
+			Você não precisa...
+		Praticamente todos os frameworks de assincronismo fazem uso destas funções
+	
+	Concorrência e Paralelismo
+		Slide: Rodovia
+		Concorrência não é paralelismo!
+		Assincronismo e paralelismo dá match!
+
+		Icicle\Concurrent\Forking\ThreadContext
+		React\ChildProcess
+
+
+	Blocking IO
+		O que significa "Blocking" no contexto de  aplicação?
+		Streams
+
+	Event Loop
+		Uma estrutura de programa, que continuamente testa por eventos externos, e executa ações quando eles acontecem
+
+	WebSockets
+		Protcolo de comunicação intensa de duas vias em tempo real
+		Conexão persistente, bidirecional, baseado em eventos
+		Comparação com HTTP
+			Ambos estão no camada 7 da OSI do TCP
+			É desenhado para funcionar sobre as 80 and 443 do HTTP 
+			Também suporta proxyes e intermediários, o que o torna "compatível" com o protocolo HTTP. 
+			Para ser compatível ele utiliza o HTTP Upgrade header e muda do protocolo HTTP para o WebSocket.
+
+
+Contexto 3: Ferramentas e Exemplos
+	
+	Processamento Assincrono
+		1: Traditional way
+		2: Ferramenta Generators
+	
+	Processamento Paralelo
+		1: Traditional way
+		2: Ferramenta Spatie Async
+
+	Async Network I/O Http Request
+		1: Ferramenta Amp + Artax
+
+	Async Network I/O Database Query
+		1: Ferramenta ReactPHP
+
+	Async code um pouco mais familiar?
+		1: Exemplo com ReactPHP
+		2: Mesmo exemplo usando Reactor
+
+	Async PHP WebServer (Não preciso mais do Nginx?)
+		1: Exemplo com o servidor embutido do PHP
+		2: Ferramenta Workerman
+
+	Async WebSocket Server
+		1: Ferramenta Swoole
+	
+
+Contexto 4: O que vem por ai?
+	Evoluindo o código
+		Assincronismo Orientado a Objetos?
+		O Paradigma Funcional?
+	Integrando Tecnologias
+		Laravel e Assincronismo?
+	Benchmarking
+		Ferramentas de Benchmarking?
+		Benchmarking em Websockets?
+		Comparação com outras linguagens?
+
+	-- Referências --
+	https://gnugat.github.io/2014/04/30/php-generators-and-coroutines.html
+
+	-- Bibliotecas --
+	Amp - https://github.com/amphp/amp
+	Artax - https://github.com/amphp/artax
+	Swoole - https://www.swoole.co.uk/ 
+	Spatie Async - https://github.com/spatie/async
+	React PHP - https://reactphp.org/
+	Ratchet - http://socketo.me/
