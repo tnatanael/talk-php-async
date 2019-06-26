@@ -1,0 +1,12 @@
+-- Perguntas iniciais --
+
+	Composição geral do publico, avançados +5 anos ou iniciantes -5 anos?
+
+
+
+-- Comandos --
+
+	//Executar Servidor Web PHP Embutido
+ 	
+	php -S localhost:8080 router.php
+

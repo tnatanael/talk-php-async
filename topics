@@ -1,9 +1,3 @@
-	-- Perguntas iniciais --
-
-Composição geral do publico, avançados +5 anos ou iniciantes -5 anos?
-
-Definição sobre modelo de apresentação, didático ou prático?
-
 	-- Tópicos --
 
 Contexto 1: Objetivo Geral
@@ -52,20 +46,18 @@ Contexto 2: Didática Básica
 		Vantagens
 			Eficiência		
 
-	Generators e Coroutines
-		O que são?
-		Porque que eu preciso saber isso?
-			Você não precisa...
-		Praticamente todos os frameworks de assincronismo fazem uso destas funções
-	
 	Concorrência e Paralelismo
 		Slide: Rodovia
 		Concorrência não é paralelismo!
 		Assincronismo e paralelismo dá match!
 
-		Icicle\Concurrent\Forking\ThreadContext
-		React\ChildProcess
+		Parallel Native: https://github.com/spatie/async
 
+	Generators e Coroutines
+		O que são?
+		Porque que eu preciso saber isso?
+			Você não precisa...
+		Praticamente todos os frameworks de assincronismo fazem uso destas funções
 
 	Blocking IO
 		O que significa "Blocking" no contexto de  aplicação?
@@ -106,14 +98,17 @@ Contexto 3: Ferramentas e Exemplos
 		2: Mesmo exemplo usando Recoil
 
 	Async PHP WebServer (Não preciso mais do Nginx?)
-		1: Exemplo com o servidor embutido do PHP
+		1: Servidor embutido do PHP
 		2: Ferramenta Workerman
 
-	Async WebSocket Server
+	Async WebSocket Server e Gateway HTTP
 		1: Ferramenta Swoole
+
 	
 	Mensão Honrosa
 		https://github.com/icicleio/icicle
+		Ratchet - http://socketo.me/
+
 	Para finalizar
 		https://kraken-php.com/
 	
@@ -131,6 +126,7 @@ Contexto 4: O que vem por ai?
 
 	-- Referências --
 	https://gnugat.github.io/2014/04/30/php-generators-and-coroutines.html
+	https://sergeyzhuk.me/tag/asyncphp/
 
 	-- Bibliotecas --
 	Amp - https://github.com/amphp/amp
