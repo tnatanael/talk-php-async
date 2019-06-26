@@ -99,10 +99,11 @@ Contexto 3: Ferramentas e Exemplos
 
 	Async Network I/O Database Query
 		1: Ferramenta ReactPHP
+		https://sergeyzhuk.me/2017/06/06/phpreact-event-loop/
 
 	Async code um pouco mais familiar?
 		1: Exemplo com ReactPHP
-		2: Mesmo exemplo usando Reactor
+		2: Mesmo exemplo usando Recoil
 
 	Async PHP WebServer (Não preciso mais do Nginx?)
 		1: Exemplo com o servidor embutido do PHP
@@ -110,6 +111,11 @@ Contexto 3: Ferramentas e Exemplos
 
 	Async WebSocket Server
 		1: Ferramenta Swoole
+	
+	Mensão Honrosa
+		https://github.com/icicleio/icicle
+	Para finalizar
+		https://kraken-php.com/
 	
 
 Contexto 4: O que vem por ai?

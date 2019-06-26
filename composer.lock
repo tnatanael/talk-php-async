@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c72695c3765976e6ac7bd1e89c62e5c",
+    "content-hash": "3d2ba63be709c0fd83b839bf18944d06",
     "packages": [
         {
             "name": "amphp/amp",
@@ -392,16 +392,16 @@
         },
         {
             "name": "amphp/parallel",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/parallel.git",
-                "reference": "687776dc6933af4c6009ac58f915faf45e8463ce"
+                "reference": "53aa422eaf89a539b4df58284f7bdf5219e37f66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/parallel/zipball/687776dc6933af4c6009ac58f915faf45e8463ce",
-                "reference": "687776dc6933af4c6009ac58f915faf45e8463ce",
+                "url": "https://api.github.com/repos/amphp/parallel/zipball/53aa422eaf89a539b4df58284f7bdf5219e37f66",
+                "reference": "53aa422eaf89a539b4df58284f7bdf5219e37f66",
                 "shasum": ""
             },
             "require": {
@@ -415,9 +415,6 @@
                 "amphp/php-cs-fixer-config": "dev-master",
                 "amphp/phpunit-util": "^1",
                 "phpunit/phpunit": "^6"
-            },
-            "suggest": {
-                "ext-pthreads": "Required for thread contexts"
             },
             "type": "library",
             "autoload": {
@@ -451,7 +448,7 @@
                 "multi-processing",
                 "multi-threading"
             ],
-            "time": "2019-01-09T21:31:46+00:00"
+            "time": "2019-05-11T17:13:47+00:00"
         },
         {
             "name": "amphp/parser",
@@ -769,16 +766,16 @@
         },
         {
             "name": "clue/buzz-react",
-            "version": "v2.4.0",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/clue/reactphp-buzz.git",
-                "reference": "3c80376ab1f512972541f77fa8a72a849ca6601c"
+                "reference": "83cc87d19fdc031cff3ddf3629d52ca95cbfbc92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/reactphp-buzz/zipball/3c80376ab1f512972541f77fa8a72a849ca6601c",
-                "reference": "3c80376ab1f512972541f77fa8a72a849ca6601c",
+                "url": "https://api.github.com/repos/clue/reactphp-buzz/zipball/83cc87d19fdc031cff3ddf3629d52ca95cbfbc92",
+                "reference": "83cc87d19fdc031cff3ddf3629d52ca95cbfbc92",
                 "shasum": ""
             },
             "require": {
@@ -788,13 +785,16 @@
                 "react/http-client": "^0.5.8",
                 "react/promise": "^2.2.1 || ^1.2.1",
                 "react/promise-stream": "^1.0 || ^0.1.1",
+                "react/promise-timer": "^1.2",
                 "react/socket": "^1.1",
                 "react/stream": "^1.0 || ^0.7",
                 "ringcentral/psr7": "^1.2"
             },
             "require-dev": {
                 "clue/block-react": "^1.0",
-                "clue/socks-react": "^0.8",
+                "clue/http-proxy-react": "^1.3",
+                "clue/reactphp-ssh-proxy": "^1.0",
+                "clue/socks-react": "^1.0",
                 "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35",
                 "react/http": "^0.8"
             },
@@ -823,7 +823,7 @@
                 "psr-7",
                 "reactphp"
             ],
-            "time": "2018-10-02T14:12:52+00:00"
+            "time": "2019-04-03T13:58:40+00:00"
         },
         {
             "name": "daverandom/libdns",
@@ -907,6 +907,57 @@
                 "event-emitter"
             ],
             "time": "2017-07-23T21:35:13+00:00"
+        },
+        {
+            "name": "icecave/repr",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icecave/repr.git",
+                "reference": "8a3d2953adf5f464a06e3e2587aeacc97e2bed07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icecave/repr/zipball/8a3d2953adf5f464a06e3e2587aeacc97e2bed07",
+                "reference": "8a3d2953adf5f464a06e3e2587aeacc97e2bed07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "icecave/archer": "~1"
+            },
+            "suggest": {
+                "eloquent/asplode": "Drop-in exception-based error handling."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Icecave\\Repr\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "A library for generating string representations of any value, inspired by Python's reprlib library.",
+            "homepage": "https://github.com/IcecaveStudios/repr",
+            "keywords": [
+                "human",
+                "readable",
+                "repr",
+                "representation",
+                "string"
+            ],
+            "time": "2014-07-25T05:44:41+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -1017,6 +1068,55 @@
                 "serialize"
             ],
             "time": "2019-05-31T20:04:32+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1152,21 +1252,21 @@
         },
         {
             "name": "react/dns",
-            "version": "v0.4.15",
+            "version": "v0.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns.git",
-                "reference": "319e110a436d26a2fa137cfa3ef2063951715794"
+                "reference": "0f30c6ceb71504d359d51132a97e1703051f1589"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/319e110a436d26a2fa137cfa3ef2063951715794",
-                "reference": "319e110a436d26a2fa137cfa3ef2063951715794",
+                "url": "https://api.github.com/repos/reactphp/dns/zipball/0f30c6ceb71504d359d51132a97e1703051f1589",
+                "reference": "0f30c6ceb71504d359d51132a97e1703051f1589",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "react/cache": "^0.5 || ^0.4 || ^0.3",
+                "react/cache": "^1.0 || ^0.6 || ^0.5 || ^0.4 || ^0.3",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
                 "react/promise": "^2.1 || ^1.2.1",
                 "react/promise-timer": "^1.2",
@@ -1174,7 +1274,7 @@
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -1193,31 +1293,32 @@
                 "dns-resolver",
                 "reactphp"
             ],
-            "time": "2018-07-02T12:17:56+00:00"
+            "time": "2019-04-01T07:31:55+00:00"
         },
         {
             "name": "react/event-loop",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3"
+                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
-                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
+                "reference": "a0ecac955c67b57c40fe4a1b88a7cca1b58c982d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8.35 || ^5.7 || ^6.4"
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35"
             },
             "suggest": {
                 "ext-event": "~1.0 for ExtEventLoop",
-                "ext-pcntl": "For signal handling support when using the StreamSelectLoop"
+                "ext-pcntl": "For signal handling support when using the StreamSelectLoop",
+                "ext-uv": "* for ExtUvLoop"
             },
             "type": "library",
             "autoload": {
@@ -1234,7 +1335,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-07-11T14:37:46+00:00"
+            "time": "2019-02-07T16:19:49+00:00"
         },
         {
             "name": "react/http-client",
@@ -1281,17 +1382,63 @@
             "time": "2018-04-10T11:38:54+00:00"
         },
         {
-            "name": "react/promise",
-            "version": "v2.7.0",
+            "name": "react/mysql",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/reactphp/promise.git",
-                "reference": "f4edc2581617431aea50430749db55cc3fc031b3"
+                "url": "https://github.com/friends-of-reactphp/mysql.git",
+                "reference": "c6daf35a494817d50298a29c858e3290b6db0e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/f4edc2581617431aea50430749db55cc3fc031b3",
-                "reference": "f4edc2581617431aea50430749db55cc3fc031b3",
+                "url": "https://api.github.com/repos/friends-of-reactphp/mysql/zipball/c6daf35a494817d50298a29c858e3290b6db0e88",
+                "reference": "c6daf35a494817d50298a29c858e3290b6db0e88",
+                "shasum": ""
+            },
+            "require": {
+                "evenement/evenement": "^3.0 || ^2.1 || ^1.1",
+                "php": ">=5.4.0",
+                "react/event-loop": "^1.0 || ^0.5",
+                "react/promise": "^2.7",
+                "react/promise-stream": "^1.1",
+                "react/promise-timer": "^1.5",
+                "react/socket": "^1.1"
+            },
+            "require-dev": {
+                "clue/block-react": "^1.2",
+                "phpunit/phpunit": "^7.0 || ^6.0 || ^5.0 || ^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "React\\MySQL\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Async MySQL database client for ReactPHP.",
+            "keywords": [
+                "async",
+                "database",
+                "mysql",
+                "reactphp"
+            ],
+            "time": "2019-05-21T08:55:16+00:00"
+        },
+        {
+            "name": "react/promise",
+            "version": "v2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/reactphp/promise.git",
+                "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
+                "reference": "31ffa96f8d2ed0341a57848cbb84d88b89dd664d",
                 "shasum": ""
             },
             "require": {
@@ -1324,7 +1471,7 @@
                 "promise",
                 "promises"
             ],
-            "time": "2018-06-13T15:59:06+00:00"
+            "time": "2019-01-07T21:25:54+00:00"
         },
         {
             "name": "react/promise-stream",
@@ -1384,16 +1531,16 @@
         },
         {
             "name": "react/promise-timer",
-            "version": "v1.5.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise-timer.git",
-                "reference": "a11206938ca2394dc7bb368f5da25cd4533fa603"
+                "reference": "35fb910604fd86b00023fc5cda477c8074ad0abc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise-timer/zipball/a11206938ca2394dc7bb368f5da25cd4533fa603",
-                "reference": "a11206938ca2394dc7bb368f5da25cd4533fa603",
+                "url": "https://api.github.com/repos/reactphp/promise-timer/zipball/35fb910604fd86b00023fc5cda477c8074ad0abc",
+                "reference": "35fb910604fd86b00023fc5cda477c8074ad0abc",
                 "shasum": ""
             },
             "require": {
@@ -1410,7 +1557,7 @@
                     "React\\Promise\\Timer\\": "src/"
                 },
                 "files": [
-                    "src/functions.php"
+                    "src/functions_include.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1433,20 +1580,20 @@
                 "timeout",
                 "timer"
             ],
-            "time": "2018-06-13T16:45:37+00:00"
+            "time": "2019-03-27T18:10:32+00:00"
         },
         {
             "name": "react/socket",
-            "version": "v1.1.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket.git",
-                "reference": "34381d9282d12670eb56b45981aad82e033ed58f"
+                "reference": "4d49bd3d6ca0257ada8645dd0f8a2f1885e290b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket/zipball/34381d9282d12670eb56b45981aad82e033ed58f",
-                "reference": "34381d9282d12670eb56b45981aad82e033ed58f",
+                "url": "https://api.github.com/repos/reactphp/socket/zipball/4d49bd3d6ca0257ada8645dd0f8a2f1885e290b3",
+                "reference": "4d49bd3d6ca0257ada8645dd0f8a2f1885e290b3",
                 "shasum": ""
             },
             "require": {
@@ -1456,7 +1603,7 @@
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
                 "react/promise": "^2.6.0 || ^1.2.1",
                 "react/promise-timer": "^1.4.0",
-                "react/stream": "^1.0 || ^0.7.1"
+                "react/stream": "^1.1"
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
@@ -1480,20 +1627,20 @@
                 "reactphp",
                 "stream"
             ],
-            "time": "2018-10-01T12:20:53+00:00"
+            "time": "2019-06-03T09:04:16+00:00"
         },
         {
             "name": "react/stream",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream.git",
-                "reference": "fdd0140f42805d65bf9687636503db0b326d2244"
+                "reference": "50426855f7a77ddf43b9266c22320df5bf6c6ce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/fdd0140f42805d65bf9687636503db0b326d2244",
-                "reference": "fdd0140f42805d65bf9687636503db0b326d2244",
+                "url": "https://api.github.com/repos/reactphp/stream/zipball/50426855f7a77ddf43b9266c22320df5bf6c6ce6",
+                "reference": "50426855f7a77ddf43b9266c22320df5bf6c6ce6",
                 "shasum": ""
             },
             "require": {
@@ -1526,7 +1673,250 @@
                 "stream",
                 "writable"
             ],
-            "time": "2018-07-11T14:38:16+00:00"
+            "time": "2019-01-01T16:15:09+00:00"
+        },
+        {
+            "name": "recoil/api",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/recoilphp/api.git",
+                "reference": "0e998e56ca1b6ddf8665b23833737445ab639b4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/recoilphp/api/zipball/0e998e56ca1b6ddf8665b23833737445ab639b4e",
+                "reference": "0e998e56ca1b6ddf8665b23833737445ab639b4e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "require-dev": {
+                "eloquent/phony": "^2",
+                "friendsofphp/php-cs-fixer": "^1",
+                "peridot-php/leo": "^1",
+                "peridot-php/peridot": "^1",
+                "peridot-php/peridot-code-coverage-reporters": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Recoil\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "The public Recoil API, for library and application developers.",
+            "homepage": "https://github.com/recoilphp/api",
+            "keywords": [
+                "Thread",
+                "async",
+                "asynchronous",
+                "continuation",
+                "coroutine",
+                "event",
+                "generator",
+                "green",
+                "multitasking",
+                "react"
+            ],
+            "time": "2017-12-13T00:34:28+00:00"
+        },
+        {
+            "name": "recoil/kernel",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/recoilphp/kernel.git",
+                "reference": "38908af4e1ed3178afddc518338695e5c548c47f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/recoilphp/kernel/zipball/38908af4e1ed3178afddc518338695e5c548c47f",
+                "reference": "38908af4e1ed3178afddc518338695e5c548c47f",
+                "shasum": ""
+            },
+            "require": {
+                "icecave/repr": "^1",
+                "php": "^7",
+                "recoil/api": "^1"
+            },
+            "require-dev": {
+                "eloquent/phony": "^2",
+                "friendsofphp/php-cs-fixer": "^1",
+                "hamcrest/hamcrest-php": "^2",
+                "peridot-php/leo": "^1",
+                "peridot-php/peridot": "^1",
+                "peridot-php/peridot-code-coverage-reporters": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Recoil\\Kernel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "Reusable components for implementing Recoil kernels.",
+            "homepage": "https://github.com/recoilphp/kernel",
+            "keywords": [
+                "Thread",
+                "async",
+                "asynchronous",
+                "continuation",
+                "coroutine",
+                "event",
+                "generator",
+                "green",
+                "multitasking",
+                "react"
+            ],
+            "time": "2017-12-13T03:55:11+00:00"
+        },
+        {
+            "name": "recoil/react",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/recoilphp/react.git",
+                "reference": "d385ab9ff8cbc99ab2d145ff9687895f9e8dcc0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/recoilphp/react/zipball/d385ab9ff8cbc99ab2d145ff9687895f9e8dcc0d",
+                "reference": "d385ab9ff8cbc99ab2d145ff9687895f9e8dcc0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7",
+                "react/event-loop": "^1.0 || ^0.5 || ^0.4",
+                "react/promise": "^2",
+                "recoil/api": "^1",
+                "recoil/kernel": "^1"
+            },
+            "require-dev": {
+                "eloquent/phony": "^2",
+                "friendsofphp/php-cs-fixer": "^2",
+                "hamcrest/hamcrest-php": "^2",
+                "peridot-php/leo": "^1",
+                "peridot-php/peridot": "^1",
+                "peridot-php/peridot-code-coverage-reporters": "^2",
+                "recoil/dev": "^0.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Recoil\\React\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "Integrate Recoil with ReactPHP.",
+            "homepage": "https://github.com/recoilphp/react",
+            "keywords": [
+                "Thread",
+                "async",
+                "asynchronous",
+                "continuation",
+                "coroutine",
+                "event",
+                "generator",
+                "green",
+                "multitasking",
+                "promise",
+                "react"
+            ],
+            "time": "2018-04-29T21:00:07+00:00"
+        },
+        {
+            "name": "recoil/recoil",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/recoilphp/recoil.git",
+                "reference": "4b6ef1bac619910b21edb3bda6a7b16502b6889a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/recoilphp/recoil/zipball/4b6ef1bac619910b21edb3bda6a7b16502b6889a",
+                "reference": "4b6ef1bac619910b21edb3bda6a7b16502b6889a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7",
+                "recoil/api": "^1",
+                "recoil/kernel": "^1"
+            },
+            "require-dev": {
+                "eloquent/phony": "^2",
+                "friendsofphp/php-cs-fixer": "^2",
+                "peridot-php/leo": "^1",
+                "peridot-php/peridot": "^1",
+                "peridot-php/peridot-code-coverage-reporters": "^2",
+                "react/dns": "^0.4",
+                "recoil/dev": "^0.3",
+                "recoil/react": "^1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Recoil\\ReferenceKernel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Harris",
+                    "email": "james.harris@icecave.com.au",
+                    "homepage": "https://github.com/jmalloc"
+                }
+            ],
+            "description": "Asynchronous coroutines for PHP 7.",
+            "homepage": "https://github.com/recoilphp/recoil",
+            "keywords": [
+                "Thread",
+                "async",
+                "asynchronous",
+                "continuation",
+                "coroutine",
+                "event",
+                "generator",
+                "green",
+                "multitasking",
+                "react"
+            ],
+            "time": "2018-04-05T21:43:59+00:00"
         },
         {
             "name": "ringcentral/psr7",
@@ -1645,16 +2035,16 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.1.6",
+            "version": "v4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "d67de79a70a27d93c92c47f37ece958bf8de4d8a"
+                "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/d67de79a70a27d93c92c47f37ece958bf8de4d8a",
-                "reference": "d67de79a70a27d93c92c47f37ece958bf8de4d8a",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/105c98bb0c5d8635bea056135304bd8edcc42b4d",
+                "reference": "105c98bb0c5d8635bea056135304bd8edcc42b4d",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +2053,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1694,20 +2084,20 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2019-01-16T21:53:39+00:00"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.1.6",
+            "version": "v4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "80e60271bb288de2a2259662cff125cff4f93f95"
+                "reference": "06ee58fbc9a8130f1d35b5280e15235a0515d457"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/80e60271bb288de2a2259662cff125cff4f93f95",
-                "reference": "80e60271bb288de2a2259662cff125cff4f93f95",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/06ee58fbc9a8130f1d35b5280e15235a0515d457",
+                "reference": "06ee58fbc9a8130f1d35b5280e15235a0515d457",
                 "shasum": ""
             },
             "require": {
@@ -1715,7 +2105,11 @@
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
+            "conflict": {
+                "masterminds/html5": "<2.6"
+            },
             "require-dev": {
+                "masterminds/html5": "^2.6",
                 "symfony/css-selector": "~3.4|~4.0"
             },
             "suggest": {
@@ -1724,7 +2118,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1751,20 +2145,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:40:59+00:00"
+            "time": "2019-05-31T18:55:30+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+                "reference": "82ebae02209c21113908c229e9883c419720738a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+                "reference": "82ebae02209c21113908c229e9883c419720738a",
                 "shasum": ""
             },
             "require": {
@@ -1776,7 +2170,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -1809,20 +2203,20 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.9.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8"
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d0cd638f4634c16d8df4508e847f14e9e43168b8",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fe5e94c604826c35a32fa832f35bd036b6799609",
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609",
                 "shasum": ""
             },
             "require": {
@@ -1834,7 +2228,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -1868,7 +2262,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/process",
@@ -1920,26 +2314,85 @@
             "time": "2019-05-30T16:10:05+00:00"
         },
         {
-            "name": "symfony/stopwatch",
-            "version": "v4.1.6",
+            "name": "symfony/service-contracts",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "5bfc064125b73ff81229e19381ce1c34d3416f4b"
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/5bfc064125b73ff81229e19381ce1c34d3416f4b",
-                "reference": "5bfc064125b73ff81229e19381ce1c34d3416f4b",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d",
+                "reference": "f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.1.3",
+                "psr/container": "^1.0"
+            },
+            "suggest": {
+                "symfony/service-implementation": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Service\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to writing services",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2019-06-13T11:15:36+00:00"
+        },
+        {
+            "name": "symfony/stopwatch",
+            "version": "v4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/stopwatch.git",
+                "reference": "6b100e9309e8979cf1978ac1778eb155c1f7d93b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/6b100e9309e8979cf1978ac1778eb155c1f7d93b",
+                "reference": "6b100e9309e8979cf1978ac1778eb155c1f7d93b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/service-contracts": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1966,7 +2419,53 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:40:59+00:00"
+            "time": "2019-05-27T08:16:38+00:00"
+        },
+        {
+            "name": "workerman/workerman",
+            "version": "v3.5.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/Workerman.git",
+                "reference": "4e5c24073b431fd950287efbfb5cc9b4c0fc7367"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/Workerman/zipball/4e5c24073b431fd950287efbfb5cc9b4c0fc7367",
+                "reference": "4e5c24073b431fd950287efbfb5cc9b4c0fc7367",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "suggest": {
+                "ext-event": "For better performance. "
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "walkor",
+                    "email": "walkor@workerman.net",
+                    "homepage": "http://www.workerman.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
+            "homepage": "http://www.workerman.net",
+            "keywords": [
+                "asynchronous",
+                "event-loop"
+            ],
+            "time": "2019-04-05T10:35:31+00:00"
         }
     ],
     "packages-dev": [],

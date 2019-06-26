@@ -8,6 +8,11 @@
         "react/child-process": "^0.5.2",
         "amphp/amp": "^2.1",
         "spatie/async": "^1.0",
-        "amphp/artax": "^3.0"
+        "amphp/artax": "^3.0",
+        "react/mysql": "^0.5.4",
+        "react/event-loop": "^1.1",
+        "recoil/recoil": "^1.0",
+        "recoil/react": "^1.0",
+        "workerman/workerman": "^3.5"
     }
 }
