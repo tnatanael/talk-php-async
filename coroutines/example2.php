@@ -7,9 +7,12 @@ function gen() {
     var_dump($ret);
     $ret = (yield 'yield2');
     var_dump($ret);
+    return 'return1';
 }
 
 $gen = gen();
 var_dump($gen->current());
+
 var_dump($gen->send('ret1'));
+
 var_dump($gen->send('ret2'));

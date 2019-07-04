@@ -106,11 +106,10 @@ Contexto 3: Ferramentas e Exemplos
 
 	
 	Mensão Honrosa
-		https://github.com/icicleio/icicle
-		Ratchet - http://socketo.me/
+		
 
 	Para finalizar
-		https://kraken-php.com/
+		
 	
 
 Contexto 4: O que vem por ai?
@@ -131,7 +130,15 @@ Contexto 4: O que vem por ai?
 	-- Bibliotecas --
 	Amp - https://github.com/amphp/amp
 	Artax - https://github.com/amphp/artax
+	Recoil - https://github.com/recoilphp/recoil
 	Swoole - https://www.swoole.co.uk/ 
-	Spatie Async - https://github.com/spatie/async
 	React PHP - https://reactphp.org/
+
+	-- Mensão Honrosa --
 	Ratchet - http://socketo.me/
+	Icicle - https://github.com/icicleio/icicle
+
+	-- Para Finalizar --
+	Spatie Async - https://github.com/spatie/async
+	Kraken - https://kraken-php.com/
+

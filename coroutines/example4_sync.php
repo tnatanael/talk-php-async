@@ -28,7 +28,7 @@ function step3() {
     echo $body;
 }
 
-for ($i = 1; $i < 50; $i++) {
+for ($i = 1; $i < 10; $i++) {
     step1();
     step2();
     step3();
