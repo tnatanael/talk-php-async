@@ -1,4 +1,4 @@
-# Websockets, EventLoop, Blocking I/O, 
+# Websockets, EventLoop, Blocking I/O, Async com PHP
 
 ## Introdução
 
