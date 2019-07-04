@@ -12,7 +12,9 @@ $ composer install
 ```
 ## 3. Bibliotecas
 
-
-
-## 4. Exemplos
-
+	Amp - https://github.com/amphp/amp
+	Artax - https://github.com/amphp/artax
+	Swoole - https://www.swoole.co.uk/ 
+	Spatie Async - https://github.com/spatie/async
+	React PHP - https://reactphp.org/
+	Ratchet - http://socketo.me/
